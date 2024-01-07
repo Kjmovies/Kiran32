@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '20389440'))
-API_HASH = environ.get('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457')
+API_ID = int(environ.get('API_ID', '29812187'))
+API_HASH = environ.get('API_HASH', '16b7734391023f594196a4944ace7e86')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -105,8 +105,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://demo-gsmz.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://demo-gsmz.onrender.com/".format(FQDN, PORT)
+URL = "https://kjmovies2.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://kjmovies2.onrender.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://demo-gsmz.onrender.com/".format(FQDN)
+    URL = "https://kjmovies2.onrender.com/".format(FQDN)
 else:
-    URL = "https://demo-gsmz.onrender.com/".format(FQDN)
+    URL = "https://kjmovies2.onrender.com/".format(FQDN)
 
 
 
